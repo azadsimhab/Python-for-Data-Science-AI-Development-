@@ -1,0 +1,59 @@
+Perform the basics tuple operations in Python, including indexing, slicing and sorting
+
+Imagine you received album recommendations from your friends and compiled all of the recommendations into a table, with specific information about each album.
+
+The table has one row for each movie and several columns:
+
+Artist - Name of the artist
+Album - Name of the album
+Released_year - Year the album was released
+Length_min_sec - Length of the album (hours,minutes,seconds)
+Genre - Genre of the album
+Music_recording_sales_millions - Music recording sales (millions in USD) on SONG://DATABASE
+Claimed_sales_millions - Album's claimed sales (millions in USD) on SONG://DATABASE
+Date_released - Date on which the album was released
+Soundtrack - Indicates if the album is the movie soundtrack (Y) or (N)
+Rating_of_friends - Indicates the rating from your friends from 1 to 10
+
+
+| Artist           | Album                         | Released  | Length   | Genre                           | Music recording sales (millions) | Claimed sales (millions) | Released     | Soundtrack | Rating (friends) |
+|------------------|-------------------------------|-----------|----------|---------------------------------|----------------------------------|--------------------------|--------------|------------|------------------|
+| Michael Jackson  | Thriller                      | 1982      | 00:42:19 | Pop, rock, R&B                  | 46                               | 65                       | 30-Nov-82    |            | 10.0             |
+| AC/DC            | Back in Black                 | 1980      | 00:42:11 | Hard rock                       | 26.1                             | 50                       | 25-Jul-80    |            | 8.5              |
+| Pink Floyd       | The Dark Side of the Moon      | 1973      | 00:42:49 | Progressive rock                | 24.2                             | 45                       | 01-Mar-73    |            | 9.5              |
+| Whitney Houston  | The Bodyguard                 | 1992      | 00:57:44 | Soundtrack/R&B, soul, pop       | 26.1                             | 50                       | 25-Jul-80    | Y          | 7.0              |
+| Meat Loaf        | Bat Out of Hell               | 1977      | 00:46:33 | Hard rock, progressive rock     | 20.6                             | 43                       | 21-Oct-77    |            | 7.0              |
+| Eagles           | Their Greatest Hits (1971-1975)| 1976      | 00:43:08 | Rock, soft rock, folk rock      | 32.2                             | 42                       | 17-Feb-76    |            | 9.5              |
+| Bee Gees         | Saturday Night Fever          | 1977      | 1:15:54  | Disco                           | 20.6                             | 40                       | 15-Nov-77    | Y          | 9.0              |
+| Fleetwood Mac    | Rumours                       | 1977      | 00:40:01 | Soft rock                       | 27.9                             | 40                       | 04-Feb-77    |            | 9.5              |
+
+
+
+
+
+# sample tuple
+
+genres_tuple = ("pop", "rock", "soul", "hard rock", "soft rock", \
+                "R&B", "progressive rock", "disco") 
+genres_tuple
+
+
+# 1. Find the length of the tuple genres_tuple
+print("Length of genres_tuple:", len(genres_tuple))
+
+# 2. Access the element at index 3
+print("Element at index 3:", genres_tuple[3])
+
+# 3. Use slicing to obtain elements from index 3 to 5
+print("Elements from index 3 to 5:", genres_tuple[3:6])
+
+# 4. Find the first two elements of the tuple genres_tuple
+print("First two elements:", genres_tuple[0:2])
+
+# 5. Find the index of 's' in the string "disco"
+print("Index of 's' in 'disco':", "disco".find('s'))
+
+# 6. Generate a sorted list from the tuple C_tuple = (-5, 1, -3)
+C_tuple = (-5, 1, -3)
+C_list = sorted(C_tuple)
+print("Sorted list from C_tuple:", C_list)
